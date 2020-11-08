@@ -1,0 +1,4 @@
+public enum Theatre{
+	PVR,INOX,CINEMAX,BIGCINEMA,SRSCINEMA
+	
+}
