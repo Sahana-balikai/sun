@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>hibernate-servlet-secondmethod</display-name>
+  <welcome-file-list>
+    <welcome-file>form.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>Contactpage</servlet-name>
+  <servlet-class>com.sahana.contact.ContactPage</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Contactpage</servlet-name>
+  <url-pattern>/ContactAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>SearchByName</servlet-name>
+  <servlet-class>com.sahana.contact.SearchByName</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>SearchByName</servlet-name>
+  <url-pattern>/SearchByNameAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>SearchByEmail</servlet-name>
+  <servlet-class>com.sahana.contact.SearchByEmail</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>SearchByEmail</servlet-name>
+  <url-pattern>/SearchByEmailAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>DisplayAll</servlet-name>
+  <servlet-class>com.sahana.contact.DisplayAll</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>DisplayAll</servlet-name>
+  <url-pattern>/displayAll</url-pattern>
+  </servlet-mapping>
+</web-app>
